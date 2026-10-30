@@ -1,0 +1,9 @@
+# Apache security + clean defaults (shared hosting / cPanel)
+Options -Indexes
+<FilesMatch "\.(sql|lock|md|txt)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^README\.txt$">
+  Require all denied
+</FilesMatch>
+DirectoryIndex index.php
